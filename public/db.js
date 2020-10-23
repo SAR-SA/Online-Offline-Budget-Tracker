@@ -5,7 +5,7 @@ const request = indexedDB.open("budget", 1);
 request.onupgradeneeded = function(event) {
    // create object store called "pending" and set autoIncrement to true
   const db = event.target.result;
-  db.createObjectStore("pending", { autoIncrement: true });
+  db.createObjectStore("pending", {keyPath: 'name'});
 };
 
 request.onsuccess = function(event) {
@@ -27,7 +27,8 @@ function saveRecord(record) {
 
   // access your pending object store
   const store = transaction.objectStore("pending");
-
+  console.log("record:", record);
+  console.log("store:", store);
   // add record to your store with add method.
   store.add(record);
 }
