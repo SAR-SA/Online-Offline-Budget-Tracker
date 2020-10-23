@@ -1,6 +1,9 @@
 # Online/Offline Budget Tracker
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![](assets/BudgetTracker1.JPG)
+
 ## Table of Contents
 - [Description](#descriptiongo)
 - [Installation Instructions](#installgo)
